@@ -15,4 +15,10 @@ INCLUDEPATH *= $${PATH_TO_DB_LIB}/SRC/inc
 SOURCES *= $$files($${PATH_TO_DB_LIB}/SRC/src/*.cpp, $${PATH_TO_DB_LIB}/SRC/src)
 FORMS *= $$files($${PATH_TO_DB_LIB}/SRC/ui/*.ui, $${PATH_TO_DB_LIB}/SRC/ui)
 
+PATH_TO_CUSTOM_WIDGETS = "../../qt_custom_widgets"
+HEADERS *= $$files($${PATH_TO_CUSTOM_WIDGETS}/SRC/inc/*.h, $${PATH_TO_CUSTOM_WIDGETS}/SRC/inc)
+INCLUDEPATH *= $${PATH_TO_CUSTOM_WIDGETS}/SRC/inc
+SOURCES *= $$files($${PATH_TO_CUSTOM_WIDGETS}/SRC/src/*.cpp, $${PATH_TO_CUSTOM_WIDGETS}/SRC/src)
+FORMS *= $$files($${PATH_TO_CUSTOM_WIDGETS}/SRC/ui/*.ui, $${PATH_TO_CUSTOM_WIDGETS}/SRC/ui)
+
 DESTDIR = $$PWD/../EXE
